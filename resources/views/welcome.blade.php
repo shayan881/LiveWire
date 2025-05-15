@@ -11,7 +11,13 @@
 
 <body>
     <h1>Hello Toplearn</h1>
+    {{-- @livewire('show-categories') --}}
+    <livewire:show-categories />
 
+
+    {{--
+    <livewire:category.show /> --}}
+    {{-- @livewire('category.show') --}}
 
     @livewireScripts
 </body>
