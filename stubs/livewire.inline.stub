@@ -1,16 +1,16 @@
 <?php
 
-namespace App\Livewire;
+namespace [namespace];
 
 use Livewire\Component;
 
-class CreatePost extends Component
+class [class] extends Component
 {
     public function render()
     {
         return <<<'HTML'
         <div>
-            {{-- Success is as dangerous as failure. --}}
+            {{-- [quote] --}}
         </div>
         HTML;
     }
