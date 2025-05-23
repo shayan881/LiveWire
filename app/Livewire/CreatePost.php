@@ -16,11 +16,13 @@ class CreatePost extends Component
 
     public function handleSubmit()
     {
-        dd($this->title, $this->description);
+        usleep(1000000);
+        // dd($this->title, $this->description);
     }
-    public function doSumthing()
+    public function doSumthing($e)
     {
-        dd('hi, hi, hi');
+        // dd('hi, hi, hi');
+        dd($e);
     }
     public function render()
     {
