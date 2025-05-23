@@ -20,4 +20,8 @@ use Illuminate\Support\Facades\Route;
 
 
 // Route::get('/courses', ShowCourse::class);
-Route::get('courses/{id}', ShowCourse::class);
+// Route::get('courses/{id}', ShowCourse::class);
+
+Route::get('/', function() {
+    return view('welcome');
+});
