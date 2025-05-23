@@ -9,7 +9,18 @@
     </div>
 </div> --}}
 
-<h1>Hello</h1>
 {{-- @section('content')
-    <h2>Hello</h2>
+<h2>Hello</h2>
 @endsection --}}
+
+<p>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, voluptate?
+</p>
+
+<x-slot:sidebar>
+    <nav>
+        <a href="">custom 1</a>
+        <a href="">custom 2</a>
+        <a href="">custom 3</a>
+    </nav>
+</x-slot:sidebar>
