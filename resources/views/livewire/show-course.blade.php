@@ -1,26 +1,20 @@
-{{-- <div>
-    <div class="card" style="width: 18rem;">
-        <img src="{{ $course['image'] }}" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">{{ $course['title'] }}</h5>
-            <p class="card-text">{{ $course['description'] }}</p>
-            <a href="#" class="btn btn-primary">{{ $course['price'] }}</a>
-        </div>
-    </div>
-</div> --}}
 
-{{-- @section('content')
-<h2>Hello</h2>
-@endsection --}}
+<!DOCTYPE html>
+<html lang="en">
 
-<p>
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, voluptate?
-</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    @livewireStyles
+</head>
 
-<x-slot:sidebar>
-    <nav>
-        <a href="">custom 1</a>
-        <a href="">custom 2</a>
-        <a href="">custom 3</a>
-    </nav>
-</x-slot:sidebar>
+<body>
+
+    <h1>{{ $course->name }}</h1>
+    <h3>{{ $course->price }}</h3>
+    @livewireScripts
+</body>
+
+</html>
