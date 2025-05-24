@@ -2,7 +2,12 @@
     <div class="col-4 mb-4">
         <label>Search</label>
         <input type="text" class="form-control" wire:model.live="search">
-        <button class="btn btn-info mt-3" wire:click="resetData">Reset</button>
+        {{-- <button class="btn btn-info mt-3" wire:click="resetData">Reset</button> --}}
+        {{-- <button class="btn btn-info mt-3" wire:click="$refresh">Refresh</button> --}}
+        {{-- <button class="btn btn-info mt-3" wire:click="$set('search', '')">reset</button> --}}
+        <button class="btn btn-info mt-3" wire:click="$toggle('sort')">
+            set {{ $sort ? 'asc' : 'desc' }}
+        </button>
     </div>
     <table class="table table-bordered table-striped">
         <tr>
