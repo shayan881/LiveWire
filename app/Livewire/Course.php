@@ -10,6 +10,7 @@ class Course extends Component
 {
     public $search = '';
     public $sort = true;
+    public $sortwith = '';
     public function delete(CourseModel $course)
     {
         $course->delete();
@@ -25,7 +26,7 @@ class Course extends Component
     }
     public function render()
     {
-        $courses = CourseModel::where('name', 'LIKE', "%{$this->search}%")->orderBy('id', $this->sort ? 'asc' : 'desc')->get();
+        $courses = CourseModel::where('name', 'LIKE', "%{$this->search}%")->orderBy($this->sortwith ? $this->sortwith : 'id', $this->sort ? 'asc' : 'desc')->get();
         // $this->js('alert("ok ok")');
         return view('livewire.course', compact('courses'));
     }

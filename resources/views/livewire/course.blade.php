@@ -5,9 +5,18 @@
         {{-- <button class="btn btn-info mt-3" wire:click="resetData">Reset</button> --}}
         {{-- <button class="btn btn-info mt-3" wire:click="$refresh">Refresh</button> --}}
         {{-- <button class="btn btn-info mt-3" wire:click="$set('search', '')">reset</button> --}}
-        <button class="btn btn-info mt-3" wire:click="$toggle('sort')">
+        <button class="btn btn-info mt-3" wire:click="$set('sortwith', 'name')"
+            wire:click="$toggle('sort')">SortName</button>
+        <button class="btn btn-info mt-3" wire:click="$set('sortwith', 'price')">SortPrice</button>
+        {{-- <button class="btn btn-info mt-3" wire:click="$toggle('sort')">
             set {{ $sort ? 'asc' : 'desc' }}
-        </button>
+        </button> --}}
+        {{-- <button class="btn btn-info mt-3" wire:click="$toggle('sort')">
+            set {{ $sort ? 'asc' : 'desc' }}
+        </button> --}}
+        {{-- <button class="btn btn-info mt-3" wire:click="$toggle('sort')">
+            set {{ $sort ? 'asc' : 'desc' }}
+        </button> --}}
     </div>
     <table class="table table-bordered table-striped">
         <tr>
