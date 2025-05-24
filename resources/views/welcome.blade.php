@@ -16,7 +16,8 @@
     <div class="container border m-5 p-5">
         <div class="row">
             <div class="col">
-                <livewire:create-post />
+                {{-- <livewire:create-post /> --}}
+                <livewire:course />
             </div>
         </div>
     </div>
