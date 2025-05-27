@@ -2,6 +2,7 @@
     <div class="col-4 mb-4">
         <label>Search</label>
         <input type="text" class="form-control" wire:model.live="search">
+        {{-- <input type="text" class="form-control" wire:keydown.enter="$set('search', $event.target.value)"> --}}
         {{-- <button class="btn btn-info mt-3" wire:click="resetData">Reset</button> --}}
         {{-- <button class="btn btn-info mt-3" wire:click="$refresh">Refresh</button> --}}
         {{-- <button class="btn btn-info mt-3" wire:click="$set('search', '')">reset</button> --}}
@@ -36,4 +37,5 @@
             </tr>
         @endforeach
     </table>
+    <button class="btn btn-info" wire:click="$parent.changeName('Nima')">Change Name</button>
 </div>

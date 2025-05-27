@@ -17,7 +17,9 @@
         <div class="row">
             <div class="col">
                 {{-- <livewire:create-post /> --}}
-                <livewire:course />
+                {{--
+                <livewire:course /> --}}
+                @livewire('home')
             </div>
         </div>
     </div>
