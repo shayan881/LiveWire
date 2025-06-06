@@ -13,7 +13,11 @@ class CreateCourse extends Component
     public function save()
     {
         $inputs = ['name' => $this->name, 'price' => $this->price];
-        Course::create($inputs);
+        $validated = $this->validate([
+            'name' => 'required',
+            'price' => 'required'
+        ]);
+        Course::create($validated);
         return to_route('courses')->with('success', 'دوره با موفقیت ساخته شد');
     }
     public function render()
